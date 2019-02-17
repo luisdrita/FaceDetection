@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/brfv4_examples_theme.css">
+	<title>Smarty</title>
+	<link rel="icon" href="./img/Smarty.png">
+
+	<script src="js/libs/createjs/preloadjs.min.js"></script>
+	<script src="js/BRFv4Demo.js"></script>
+
+	<script>
+		window.onload = brfv4Example.start; //see js/BRFv4Demo.js
+	</script>
+
+	<style>
+
+		body,h1,h2,h3,h4,h5 {
+			font-family: "Raleway", sans-serif;
+			background-color: white;
+		}
+
+		.shadow{
+			box-shadow: 2px 4px 10px #888888;
+			margin-bottom: 5%;
+			background-color: #ffffff;
+		}
+
+		#container {
+			margin: 0px auto;
+			width: 500px;
+			height: 375px;
+		}
+
+		#videoElement {
+			width: 500px;
+			height: 375px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+<div class="shadow" style="width: 200px; height: 200px; position: absolute; top: 50px; left: 50px; border-radius: 10px">
+	<img src="img/Smarty2.png" style="width: 150px; display: block; margin: auto; position: absolute; top: 45px; left: 23px">
+</div>
+
+<div class="shadow" style="width: 375px; height: 800px; position: absolute; top: 50px; left: 275px; border-radius: 10px">
+
+	<div id="container">
+		<div id="_wrapper">
+
+			<div id="_content">
+				<video  class = "videoElement" id="_webcam" playsinline></video>
+				<canvas id="_imageData"></canvas>
+				<canvas id="_faceSub"></canvas>
+				<canvas id="_t3d"></canvas>
+				<canvas id="_f3d"></canvas>
+				<canvas id="_drawing"></canvas>
+				<div id="_progressBar"></div>
+			</div>
+
+			<div id="_subline"></div>
+		</div>
+	</div>
+
+		<img src="img/big.png" style="width: 250px; display: block; margin: auto; position: absolute; top: 445px; left: 60px">
+
+</div>
+
+<div class="shadow" style="width: 200px; height: 575px; position: absolute; top: 275px; left: 50px; border-radius: 10px">
+
+	<img src="img/eagle.png" style="width: 100px; display: block; margin: auto; position: absolute; top: 145px; left: 50px">
+	<img src="img/reward.jpeg" style="width: 100px; display: block; margin: auto; position: absolute; top: 345px; left: 50px">
+
+</div>
+
+<div class="shadow" style="width: 600px; height: 50px; position: absolute; top: 875px; left: 50px; background-color: black; color: white; border-radius: 10px">
+	<p style="text-align: center">Smarty</p>
+</div>
+
+<!--
+
+<div id="_wrapper">
+
+	<div id="_content">
+		<video  class = "videoElement" id="_webcam" playsinline style="width: 700px;"></video>
+		<canvas id="_imageData"></canvas>
+		<canvas id="_faceSub"></canvas>
+		<canvas id="_t3d"></canvas>
+		<canvas id="_f3d"></canvas>
+		<canvas id="_drawing"></canvas>
+		<div id="_progressBar"></div>
+	</div>
+
+	<div id="_subline"></div>
+</div>
+
+-->
+
+<div id="_settingsRight"></div>
+
+</body>
+
+</html>
